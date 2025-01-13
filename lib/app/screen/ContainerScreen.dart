@@ -6,38 +6,31 @@ class Containerscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Container Screen'),
-      ),
-      body: Center(
-        child: Column(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.blue,
-                borderRadius: BorderRadius.all(Radius.circular(10)),
-              ),
-              child: Text('Container 1'),
-            ),
-            SizedBox(height: 10),
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.green,
-                borderRadius: BorderRadius.all(Radius.circular(10)),
-              ),
-              child: Text('Container 2'),
-            ),
-            SizedBox(height: 10),
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.yellow,
-                borderRadius: BorderRadius.all(Radius.circular(10)),
-              ),
-              child: Text('Container 3'),
-            ),
-          ],
+        appBar: AppBar(
+          title: Text('Container Widget'),
         ),
-      ),
-    );
+        body: ListView(
+          children: [
+            Center(
+              child: Container(
+                alignment: Alignment.topRight,
+                height: 200,
+                width: 200,
+                margin: EdgeInsets.symmetric(),
+                // constraints: BoxConstraints(
+                //   maxWidth: 200,
+                //   maxHeight: 200,
+                //   minHeight: 200,
+                //   minWidth: 200,
+                // ),
+                color: Colors.grey.shade100,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('Container'),
+                ),
+              ),
+            )
+          ]
+      ));
   }
 }
