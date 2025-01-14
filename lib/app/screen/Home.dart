@@ -11,6 +11,7 @@ import 'package:flutter_world/app/screen/ImageScreen.dart';
 import 'package:flutter_world/app/screen/OutlinedButtonScreen.dart';
 import 'package:flutter_world/app/screen/PaddingScreen.dart';
 import 'package:flutter_world/app/screen/ProgressIndicatorScreen.dart';
+import 'package:flutter_world/app/screen/RichTextScreen.dart';
 import 'package:flutter_world/app/screen/RowScreen.dart';
 import 'package:flutter_world/app/screen/ScaffoldScreen.dart';
 import 'package:flutter_world/app/screen/SizedBoxScreen.dart';
@@ -49,6 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Map<String, dynamic>> screens = [
     {'title': 'Container', 'screen': Containerscreen(), 'isCheck': false},
     {'title': 'Text', 'screen': TextScreen(), 'isCheck': false},
+    {'title': 'RichText', 'screen': RichTextScreen(), 'isCheck': false},
     {'title': 'Column', 'screen': Columnscreen(), 'isCheck': false},
     {'title': 'Row', 'screen': Rowscreen(), 'isCheck': false},
     {'title': 'Center', 'screen': Centerscreen(), 'isCheck': false},
