@@ -21,9 +21,8 @@ class Imagescreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Container(
-              color : Colors.grey.shade200,
-              child: Text(
-                '''
+              color: Colors.grey.shade200,
+              child: Text('''
 
     Local Image
 
@@ -32,8 +31,7 @@ class Imagescreen extends StatelessWidget {
               height: 100,
               width: 200,
             ),
-                '''
-              ),
+                '''),
             ),
             SizedBox(height: 20),
             Image.network(
@@ -43,9 +41,8 @@ class Imagescreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Container(
-              color : Colors.grey.shade200,
-              child: Text(
-                '''
+              color: Colors.grey.shade200,
+              child: Text('''
 
     Network Image
 
@@ -54,55 +51,42 @@ class Imagescreen extends StatelessWidget {
               height: 100,
               width: 200,
             )
-                '''
-              ),
+                '''),
             ),
             SizedBox(height: 20),
-                        Image.asset(
-              'images/fruits.png',
+            Image.asset(
+              'images/fruitss.png',
+              errorBuilder: (context, error, stackTrace) {
+                return Image.asset(
+                  'images/image.png',
+                  height: 100,
+                  width: 200,
+                );
+              },
               height: 100,
               width: 200,
             ),
             SizedBox(height: 20),
             Container(
-              color : Colors.grey.shade200,
-              child: Text(
-                '''
+              color: Colors.grey.shade200,
+              child: Text('''
 
-                '''
-              ),
-            ),
-            SizedBox(height: 20),
-                        Image.asset(
-              'images/fruits.png',
+      image not found or loading failed
+
+          Image.asset(
+              'images/fruitss.png',
+              errorBuilder: (context, error, stackTrace) {
+                return Image.asset(
+                  'images/image.png',
+                  height: 100,
+                  width: 200,
+                );
+              },
               height: 100,
               width: 200,
+            )
+                '''),
             ),
-            SizedBox(height: 20),
-            Container(
-              color : Colors.grey.shade200,
-              child: Text(
-                '''
-
-                '''
-              ),
-            ),
-            SizedBox(height: 20),
-                        Image.asset(
-              'images/fruits.png',
-              height: 100,
-              width: 200,
-            ),
-            SizedBox(height: 20),
-            Container(
-              color : Colors.grey.shade200,
-              child: Text(
-                '''
-
-                '''
-              ),
-            ),
-            SizedBox(height: 20),
           ],
         ),
       ),
